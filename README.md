@@ -22,9 +22,14 @@ console.log(result.text);
 - `text` - the page's text in reading order: a line break between lines, a blank line between paragraphs
 - `lines` - each line's `text`, `confidence` (0 to 1), `paragraph` (starts one), and `box` (in the leveled page)
 - `angle` - the page's measured skew (radians), and `scale` - the scale it was analyzed at
+- `orientation` - the page as photographed: `upright`, `mirrored`, `upside-down`, or `upside-down mirrored` (a
+  mirrored or upside-down page is read upright)
+
+Its options: `onProgress(done, total)` - called after each line is read; `orient` - detect a mirrored or upside-down
+page (default true); `model` - a model loaded by `loadRecognizer(module)` (the package's by default).
 
 It runs synchronously - call it in a Web Worker to keep a page responsive. The model loads on first use
-(`loadRecognizer()` loads it ahead).
+(`loadRecognizer()` loads it ahead). `pageText(lines)` joins lines as `recognize` does.
 
 
 ## How it works

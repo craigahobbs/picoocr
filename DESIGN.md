@@ -109,9 +109,12 @@ the mean probability of its characters' steps.
 
 ### The API (lib/index.js)
 
-`recognize(image, {onProgress, model})` - synchronous (run it in a Web Worker); `loadRecognizer(module)` - the
-package's model, loaded once, or another; `pageText(lines)` - lines as text. The result is `{text, lines, angle,
-scale}`; each line `{text, confidence, paragraph, box}`.
+`recognize(image, {onProgress, model, orient})` - synchronous (run it in a Web Worker); `loadRecognizer(module)` -
+the package's model, loaded once, or another; `pageText(lines)` - lines as text. The result is `{text, lines, angle,
+scale, orientation}`; each line `{text, confidence, paragraph, box}`. With `orient` (the default), the page's three
+longest lines (their first 10 line heights) are read four ways - as photographed, flipped horizontally (mirrored),
+flipped vertically, and both (turned 180 degrees) - and the page is read the way whose mean confidence leads the
+photographed way's by at least 0.02.
 
 
 ## Training

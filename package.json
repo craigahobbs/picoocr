@@ -1,7 +1,7 @@
 {
     "type": "module",
     "name": "picoocr",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "PicoOCR - text recognition in pure JavaScript, its neural network in the code",
     "keywords": [
         "ocr",
