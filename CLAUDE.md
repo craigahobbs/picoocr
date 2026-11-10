@@ -36,6 +36,8 @@ Local Makefile overrides:
 `train/` is a [python-build](https://github.com/craigahobbs/python-build#readme) package (its unit tests in
 `train/src/tests/`): unittest with `-W error`, pylint, and 100% branch coverage. Its tests run on the CPU, fast, with
 no network: a tiny recipe and network, Pillow's embedded font (`tests/helpers.py`), and mocks for the downloads.
+They need Pillow's Raqm layout, which loads FriBiDi at runtime - on macOS, `brew install fribidi` (otherwise each
+render warns that Raqm is unavailable, an error under `-W error`).
 Local Makefile overrides: `PYTHON_IMAGES_EXCLUDE` (3.11, 3.15), `PYLINT_ARGS` (a comment above each function, not a
 docstring), and `PIP_INSTALL_ARGS` (PyTorch's CPU wheels on Linux).
 

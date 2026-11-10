@@ -58,3 +58,6 @@ make train             # train the recognizer (build/train/run)
 make train-export      # its best checkpoint as build/train/recognizer.js, checked against the package (make parity)
 make train-install     # into lib/models/
 ~~~
+
+The training renders text with Pillow's Raqm layout, which loads FriBiDi at runtime - on macOS, `brew install fribidi`
+first (Linux distributions and the Docker images have it).
