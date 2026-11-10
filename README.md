@@ -4,6 +4,9 @@ PicoOCR reads the text of page photos in pure JavaScript. A small neural network
 weights are part of the code - no network requests, no files to fetch, no WebAssembly, no dependencies. Import it and
 it works, in the browser (a page or a Web Worker), offline, or in Node.
 
+**Try it:** [PicoRead](https://craigahobbs.github.io/picoread/) - photograph a document's pages with your phone and
+listen to them. PicoOCR reads each page and PicoVox speaks it, all on your device.
+
 PicoOCR is part of the PicoVox family ([PicoVox](https://github.com/craigahobbs/picovox) speaks text; PicoOCR reads it).
 
 
