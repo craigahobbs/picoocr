@@ -1,0 +1,87 @@
+{
+    "description": "make train's book texts, pinned (picoocr_train/texts.py): the Project Gutenberg texts the training lines' prose is drawn from - by the URL, SHA-256, and size of the bytes the pipeline reads (the pins PicoVox trains on - its train/data/books.json), and a Wayback Machine capture of the same bytes (archive) where one is known, the fetch's fallback once Gutenberg revises a text. A text whose hash doesn't match is never used.",
+    "books": [
+        {
+            "name": "pg1342",
+            "url": "https://www.gutenberg.org/cache/epub/1342/pg1342.txt",
+            "sha256": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+            "bytes": 772386
+        },
+        {
+            "name": "pg84",
+            "url": "https://www.gutenberg.org/cache/epub/84/pg84.txt",
+            "sha256": "7810cd483cffcf2cc8a1d8f0d5807931e69d4f48cd14149b8c76f88af82fead3",
+            "bytes": 448885,
+            "archive": "https://web.archive.org/web/20260613140413id_/https://www.gutenberg.org/cache/epub/84/pg84.txt"
+        },
+        {
+            "name": "pg2701",
+            "url": "https://www.gutenberg.org/cache/epub/2701/pg2701.txt",
+            "sha256": "b5e88b71a1cda068e9ab1d94344c9d932338ba6da1a66def97a1aecd9cfcc87d",
+            "bytes": 1276315
+        },
+        {
+            "name": "pg1661",
+            "url": "https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
+            "sha256": "922e2a12ccb43a4c9544c260b2166c6ad2097aeb5957faeee113f173bb857cd0",
+            "bytes": 607606,
+            "archive": "https://web.archive.org/web/20260622130936id_/https://www.gutenberg.org/cache/epub/1661/pg1661.txt"
+        },
+        {
+            "name": "pg98",
+            "url": "https://www.gutenberg.org/cache/epub/98/pg98.txt",
+            "sha256": "d54c2b80d40a40b982cd88852c6180bb944d95acdb028af3d0e01a1750681784",
+            "bytes": 807197,
+            "archive": "https://web.archive.org/web/20260617203631id_/https://www.gutenberg.org/cache/epub/98/pg98.txt"
+        },
+        {
+            "name": "pg74",
+            "url": "https://www.gutenberg.org/cache/epub/74/pg74.txt",
+            "sha256": "74d77384b123a6360db9ab58463cff8b38df8525fbdc6000c81ee388e1f3cf10",
+            "bytes": 434357,
+            "archive": "https://web.archive.org/web/20260630054130id_/https://gutenberg.org/cache/epub/74/pg74.txt"
+        },
+        {
+            "name": "pg1400",
+            "url": "https://www.gutenberg.org/cache/epub/1400/pg1400.txt",
+            "sha256": "9a637118af8e953e9764ec603d9b0a032883384d465acac2e27966a80cf1c6f8",
+            "bytes": 1058204,
+            "archive": "https://web.archive.org/web/20260630214721id_/https://www.gutenberg.org/cache/epub/1400/pg1400.txt"
+        },
+        {
+            "name": "pg345",
+            "url": "https://www.gutenberg.org/cache/epub/345/pg345.txt",
+            "sha256": "96cd16eacdbfebae8fdda5591f66e0cc8ee76be18e0cd1aca02bc00615782d28",
+            "bytes": 890348,
+            "archive": "https://web.archive.org/web/20260624000432id_/https://www.gutenberg.org/cache/epub/345/pg345.txt"
+        },
+        {
+            "name": "pg174",
+            "url": "https://www.gutenberg.org/cache/epub/174/pg174.txt",
+            "sha256": "38f36b510417177aa87a6a24c968e3ec63a447b7df36a9c1a7c5a3f2d9e51547",
+            "bytes": 465814,
+            "archive": "https://web.archive.org/web/20260630214715id_/https://www.gutenberg.org/cache/epub/174/pg174.txt"
+        },
+        {
+            "name": "pg2852",
+            "url": "https://www.gutenberg.org/cache/epub/2852/pg2852.txt",
+            "sha256": "f7c8c68729d32a5f6a04a5a9ad73d184176e66a6c76b3992c41c1ab47b427d98",
+            "bytes": 388046,
+            "archive": "https://web.archive.org/web/20260630214726id_/https://www.gutenberg.org/cache/epub/2852/pg2852.txt"
+        },
+        {
+            "name": "pg1260",
+            "url": "https://www.gutenberg.org/cache/epub/1260/pg1260.txt",
+            "sha256": "13414dee2951c3ee731d76d2ffd822016b2479c892162760c5d0eb2aa5fa7631",
+            "bytes": 1084803,
+            "archive": "https://web.archive.org/web/20260624000426id_/https://www.gutenberg.org/cache/epub/1260/pg1260.txt"
+        },
+        {
+            "name": "pg768",
+            "url": "https://www.gutenberg.org/cache/epub/768/pg768.txt",
+            "sha256": "e533fe750589f0421d5d744576315f5c2b9b0d69e981179ea0551bbf134c5e02",
+            "bytes": 693819,
+            "archive": "https://web.archive.org/web/20260624000450id_/https://www.gutenberg.org/cache/epub/768/pg768.txt"
+        }
+    ]
+}

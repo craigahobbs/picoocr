@@ -1,0 +1,5 @@
+# make train's environment (picoocr_train) - build/venv-train (make build/venv-train.build); Python 3.12 through 3.14
+#   The training (PyTorch), its arrays (numpy), and the lines' rendering (Pillow - FreeType and Raqm's text layout)
+torch==2.14.1
+numpy==2.5.4
+pillow==13.0.0

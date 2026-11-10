@@ -1,0 +1,10 @@
+/build/
+/downloads/
+/node_modules/
+/Makefile.base
+/eslint.config.js
+/jsdoc.json
+/package-lock.json
+.DS_Store
+__pycache__/
+*.pyc

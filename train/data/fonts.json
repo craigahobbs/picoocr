@@ -1,0 +1,406 @@
+{
+    "description": "make train's fonts, pinned (picoocr_train/fonts.py): each font file the training data is rendered in - by its URL at a pinned commit of its repository (the URW base35 fonts - metric clones of the classic PostScript faces: Times, Helvetica, Courier, Century Schoolbook, Palatino, Bookman, Avant Garde - and Google Fonts' families, among them Carlito and Caladea, Calibri's and Cambria's metric clones), the SHA-256 and size of its bytes, the named instance of a variable font (variation), and its split: train fonts render the training lines; validation fonts are never trained on, so the validation measures how the recognizer reads faces it hasn't seen.",
+    "fonts": [
+        {
+            "name": "NimbusRoman-Regular",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/NimbusRoman-Regular.otf",
+            "split": "train",
+            "sha256": "fd41669443616a7ae890c42e53a58f47fa24a940fd1e367acaff665cf5b6e9d8",
+            "bytes": 98200
+        },
+        {
+            "name": "NimbusRoman-Bold",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/NimbusRoman-Bold.otf",
+            "split": "train",
+            "sha256": "e0ad81923bc6d85d5426f796217c87963ca1ae3c65e22c87a25b6c6353de299e",
+            "bytes": 100984
+        },
+        {
+            "name": "NimbusRoman-Italic",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/NimbusRoman-Italic.otf",
+            "split": "train",
+            "sha256": "b7c424e6cb79baddfcdcd9a9d87f9fc4fdd06f0e5160066e2b2e47bcd647c7b9",
+            "bytes": 105684
+        },
+        {
+            "name": "NimbusRoman-BoldItalic",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/NimbusRoman-BoldItalic.otf",
+            "split": "train",
+            "sha256": "c84bcb17ab4ee54f16dadad6a3b0b2df37a24f9fc812897c4a59eeca785a5dec",
+            "bytes": 104772
+        },
+        {
+            "name": "NimbusSans-Regular",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/NimbusSans-Regular.otf",
+            "split": "train",
+            "sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08",
+            "bytes": 82264
+        },
+        {
+            "name": "NimbusSans-Bold",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/NimbusSans-Bold.otf",
+            "split": "train",
+            "sha256": "7f33328e6b4d4cd21b45fa625791928c9407dc702db6780e56b09ca9a3ecaa67",
+            "bytes": 83264
+        },
+        {
+            "name": "NimbusSans-Italic",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/NimbusSans-Italic.otf",
+            "split": "train",
+            "sha256": "7b0bef5686aa58c0fd0f0d01beeae56664208490e30ca6a25431281c9a0c6402",
+            "bytes": 95244
+        },
+        {
+            "name": "NimbusSansNarrow-Regular",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/NimbusSansNarrow-Regular.otf",
+            "split": "train",
+            "sha256": "0111cf7c05377c4f1685d37bfa8b3edd2033278122f69e0a9803a8514e352b99",
+            "bytes": 80864
+        },
+        {
+            "name": "NimbusMonoPS-Regular",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/NimbusMonoPS-Regular.otf",
+            "split": "train",
+            "sha256": "4f225ca8e13acb16f733ce741693105e527d5f7a5443901b9ecc190fca4e149b",
+            "bytes": 77936
+        },
+        {
+            "name": "NimbusMonoPS-Bold",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/NimbusMonoPS-Bold.otf",
+            "split": "train",
+            "sha256": "f036d05d2168c7f71cb11d31e81d11133f3d09711e24ebde19d08a24842384d5",
+            "bytes": 87520
+        },
+        {
+            "name": "C059-Roman",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/C059-Roman.otf",
+            "split": "train",
+            "sha256": "e00cc7b88f0cf25ae43f0e48de39d0043fe042b55719a3ac32669ab3369542ec",
+            "bytes": 97476
+        },
+        {
+            "name": "C059-Italic",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/C059-Italic.otf",
+            "split": "train",
+            "sha256": "77852deabd3a84f7d0213932239de522410309374c2255ccbd510f01dc7c6e80",
+            "bytes": 101324
+        },
+        {
+            "name": "C059-Bold",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/C059-Bold.otf",
+            "split": "train",
+            "sha256": "75dea10068264324522e7b96612083582eee0158eb728fa9c219279890f33e26",
+            "bytes": 100692
+        },
+        {
+            "name": "P052-Roman",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/P052-Roman.otf",
+            "split": "train",
+            "sha256": "f054a7389d8d0e9f4c5f7b4c21feb7e2b14bec8004a1e92778a78d149524eea9",
+            "bytes": 110236
+        },
+        {
+            "name": "P052-Italic",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/P052-Italic.otf",
+            "split": "train",
+            "sha256": "1feac6055211cf5c6c812c026e398195070f174064cc4d390f0db01647443b0e",
+            "bytes": 109824
+        },
+        {
+            "name": "URWBookman-Light",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/URWBookman-Light.otf",
+            "split": "train",
+            "sha256": "7b1bc8e6a16cef53785ce03d4848f8971f3ba38cd9e266e4786a50e08bd9235b",
+            "bytes": 98396
+        },
+        {
+            "name": "URWGothic-Book",
+            "url": "https://raw.githubusercontent.com/ArtifexSoftware/urw-base35-fonts/3c0ba3b5687632dfc66526544a4e811fe0ec0cd9/fonts/URWGothic-Book.otf",
+            "split": "train",
+            "sha256": "04318316cee29950805110c9c8949eea189ef5575132881f4d4d7e03e5299903",
+            "bytes": 82968
+        },
+        {
+            "name": "Carlito-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/carlito/Carlito-Regular.ttf",
+            "split": "train",
+            "sha256": "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595",
+            "bytes": 628032
+        },
+        {
+            "name": "Carlito-Bold",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/carlito/Carlito-Bold.ttf",
+            "split": "train",
+            "sha256": "bb5d20f79b82599ec72983597437373a80f2d2085fa91fc144fd74e876a594db",
+            "bytes": 682468
+        },
+        {
+            "name": "Carlito-Italic",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/carlito/Carlito-Italic.ttf",
+            "split": "train",
+            "sha256": "0b019225e58d702bfedcbd35c21696769f8ee115cb6343f84c2f240312450d1c",
+            "bytes": 615236
+        },
+        {
+            "name": "Caladea-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/caladea/Caladea-Regular.ttf",
+            "split": "train",
+            "sha256": "f1e899278b7b4491aba5b6a8253c4b04c050cc59b21865be5c37559a775153cd",
+            "bytes": 81600
+        },
+        {
+            "name": "Caladea-Bold",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/caladea/Caladea-Bold.ttf",
+            "split": "train",
+            "sha256": "ae3cb2dcbc925809dd29d2a44e9802211cab66be541bacbfc9c08c74b27c3742",
+            "bytes": 84492
+        },
+        {
+            "name": "Caladea-Italic",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/caladea/Caladea-Italic.ttf",
+            "split": "train",
+            "sha256": "4359a8e24f748b6447b1ff6d7a174febe70961d29f8bb8634b56dacd740a3deb",
+            "bytes": 83780
+        },
+        {
+            "name": "CrimsonText-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/crimsontext/CrimsonText-Regular.ttf",
+            "split": "train",
+            "sha256": "48e6c5d5ad1d01599d374ecb817e15890d1feb3b8a3a88e527d44c90389e1f06",
+            "bytes": 107200
+        },
+        {
+            "name": "CrimsonText-Italic",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/crimsontext/CrimsonText-Italic.ttf",
+            "split": "train",
+            "sha256": "4ed1699ac7c64e8b3d33f6bb8323c3d7206b0d7bacb9ee2d65c697e6014d29de",
+            "bytes": 110216
+        },
+        {
+            "name": "Lato-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/lato/Lato-Regular.ttf",
+            "split": "train",
+            "sha256": "d636e4683231f931eda222d588e944d082bfd3bdba02f928bee461c0f185b251",
+            "bytes": 656568
+        },
+        {
+            "name": "Lato-Bold",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/lato/Lato-Bold.ttf",
+            "split": "train",
+            "sha256": "8a0aace75d33794eece4b28187bfc1df0bbd2888b5d8a56e01788c8d65d16be1",
+            "bytes": 656544
+        },
+        {
+            "name": "Lato-Light",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/lato/Lato-Light.ttf",
+            "split": "train",
+            "sha256": "cf2a774503baf418d584f49967bd160e1e03f087c13b25602f28024ec7788f08",
+            "bytes": 643884
+        },
+        {
+            "name": "OldStandard-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/oldstandardtt/OldStandard-Regular.ttf",
+            "split": "train",
+            "sha256": "42717a1280b523a506ca2b0285cca380e77fe214b1f6e3d75a8b925005f19eac",
+            "bytes": 249668
+        },
+        {
+            "name": "IBMPlexSerif-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/ibmplexserif/IBMPlexSerif-Regular.ttf",
+            "split": "train",
+            "sha256": "e882efa9c41949a528ac2369079ec5ef050c1c996bbd0bacce3c3326d44cf80d",
+            "bytes": 163068
+        },
+        {
+            "name": "IBMPlexMono-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/ibmplexmono/IBMPlexMono-Regular.ttf",
+            "split": "train",
+            "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+            "bytes": 135580
+        },
+        {
+            "name": "FiraSans-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/firasans/FiraSans-Regular.ttf",
+            "split": "train",
+            "sha256": "c29556a2719bf613ef3d5e070e40d903a8965d9c081beca1375dc1e6e0f93c23",
+            "bytes": 456996
+        },
+        {
+            "name": "FiraSans-Bold",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/firasans/FiraSans-Bold.ttf",
+            "split": "train",
+            "sha256": "a4d8e149ecdd4874a0726eb0af894488b3b31c423d6b0017c8f415ed1b795b45",
+            "bytes": 489720
+        },
+        {
+            "name": "FiraSans-Light",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/firasans/FiraSans-Light.ttf",
+            "split": "train",
+            "sha256": "e2172f4a23e9be22f977c34de3897d890401bbc5e9c47df968dfa2c01fb32235",
+            "bytes": 449660
+        },
+        {
+            "name": "Spectral-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/spectral/Spectral-Regular.ttf",
+            "split": "train",
+            "sha256": "c89021dc20720c8d0dcf40b0b2f6e00c13665fa8041717f581396f51b8c78f5d",
+            "bytes": 261088
+        },
+        {
+            "name": "Spectral-Italic",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/spectral/Spectral-Italic.ttf",
+            "split": "train",
+            "sha256": "7ec97244259db4008c4b1224c7914e5371c797c0044af9d85c2d761ba0e5f787",
+            "bytes": 270468
+        },
+        {
+            "name": "CourierPrime-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/courierprime/CourierPrime-Regular.ttf",
+            "split": "train",
+            "sha256": "72f793376f8e2841656bf21d77a5de010f2929bd6956a22ee848ad0c7eb978af",
+            "bytes": 71188
+        },
+        {
+            "name": "LibreBaskerville-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/librebaskerville/LibreBaskerville%5Bwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "05a95421961341c5b2556285e8415df9db27dab4f4abe22b446b3c6a8b916c5d",
+            "bytes": 171900
+        },
+        {
+            "name": "EBGaramond-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/ebgaramond/EBGaramond%5Bwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "ef9512f92f6d579e5dc75af59a5a4b1b8b47d2eda89e00b954d44520e5369027",
+            "bytes": 851176
+        },
+        {
+            "name": "Merriweather-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/merriweather/Merriweather%5Bopsz%2Cwdth%2Cwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "d0ed0e359e396af7ad05e73dffd11a3a4c326ea0d0283c56bd9361cb2cc86a96",
+            "bytes": 4628080
+        },
+        {
+            "name": "SourceSerif4-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/sourceserif4/SourceSerif4%5Bopsz%2Cwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b",
+            "bytes": 1209508
+        },
+        {
+            "name": "OpenSans-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/opensans/OpenSans%5Bwdth%2Cwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "36643644f318a812aab2d2ed3bb98f8cf0872527f835fe9398d95fe6b9adb878",
+            "bytes": 532636
+        },
+        {
+            "name": "OpenSans-Bold",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/opensans/OpenSans%5Bwdth%2Cwght%5D.ttf",
+            "variation": "Bold",
+            "split": "train",
+            "sha256": "36643644f318a812aab2d2ed3bb98f8cf0872527f835fe9398d95fe6b9adb878",
+            "bytes": 532636
+        },
+        {
+            "name": "Roboto-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+            "bytes": 488584
+        },
+        {
+            "name": "Roboto-Bold",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+            "variation": "Bold",
+            "split": "train",
+            "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+            "bytes": 488584
+        },
+        {
+            "name": "NotoSerif-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/notoserif/NotoSerif%5Bwdth%2Cwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "4d8e6761424656867019081a1a01336f3cb086982682698714054fc33f782713",
+            "bytes": 1887192
+        },
+        {
+            "name": "NotoSans-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/notosans/NotoSans%5Bwdth%2Cwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+            "bytes": 2049096
+        },
+        {
+            "name": "Oswald-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/oswald/Oswald%5Bwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "5b38c246e255a12f5712d640d56bcced0472466fc68983d2d0410ec0457c2817",
+            "bytes": 172088
+        },
+        {
+            "name": "ArchivoNarrow-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/archivonarrow/ArchivoNarrow%5Bwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "adbe027f625c8393ae0f6e174e32e233dda485bc3eda5153ce428275394ef97f",
+            "bytes": 93304
+        },
+        {
+            "name": "Alegreya-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/alegreya/Alegreya%5Bwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "ba5564634b93a8f8ba57b48cd4f1ae7417d2b4656fbac779028679b00de3cf12",
+            "bytes": 425288
+        },
+        {
+            "name": "RobotoCondensed-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/robotocondensed/RobotoCondensed%5Bwght%5D.ttf",
+            "variation": "Regular",
+            "split": "train",
+            "sha256": "dace262afcee68a5276f200d8026c57221735c0118ab5fda8c2c0d3dc409a8d0",
+            "bytes": 371616
+        },
+        {
+            "name": "PTSerif-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/ptserif/PT_Serif-Web-Regular.ttf",
+            "split": "validation",
+            "sha256": "a4951fade06ff8f09b7673aa81ffb65a8cd409e24d3289a6dc670bc4dda2557a",
+            "bytes": 359048
+        },
+        {
+            "name": "PTSans-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/ptsans/PT_Sans-Web-Regular.ttf",
+            "split": "validation",
+            "sha256": "9cc831490532009bae2b3ce0d39c62adfc889060beb421593bfd9d2396d0f10a",
+            "bytes": 442960
+        },
+        {
+            "name": "Gelasio-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/gelasio/Gelasio%5Bwght%5D.ttf",
+            "variation": "Regular",
+            "split": "validation",
+            "sha256": "4daecea457258c9ebeb8bc99ed3fd24353618bfad3ea4b93fa0b5d0468fc04e4",
+            "bytes": 168556
+        },
+        {
+            "name": "IBMPlexSans-Regular",
+            "url": "https://raw.githubusercontent.com/google/fonts/86aced91de05cd4f96a06838124cca45be337b2b/ofl/ibmplexsans/IBMPlexSans%5Bwdth%2Cwght%5D.ttf",
+            "variation": "Regular",
+            "split": "validation",
+            "sha256": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3",
+            "bytes": 537244
+        }
+    ]
+}
