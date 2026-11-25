@@ -5,6 +5,7 @@
 The tests of picoocr_train.fonts
 """
 
+import os
 import unittest
 import unittest.mock
 
@@ -26,7 +27,7 @@ class TestFonts(unittest.TestCase):
     def test_font_path(self):
         font = {'url': 'https://example.com/fonts/Some%5Bwght%5D.ttf', 'sha256': 'x'}
         with unittest.mock.patch.object(fonts, 'pinned_path', side_effect=lambda pin, path: path):
-            self.assertEqual(font_path(font, '/downloads'), '/downloads/fonts/Some[wght].ttf')
+            self.assertEqual(font_path(font, '/downloads'), os.path.join('/downloads', 'fonts', 'Some[wght].ttf'))
 
     def test_load_font(self):
         font = load_font(test_font_path(), 20)

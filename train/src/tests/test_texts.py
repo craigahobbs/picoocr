@@ -5,6 +5,7 @@
 The tests of picoocr_train.texts
 """
 
+import os
 import random
 import unittest
 import unittest.mock
@@ -24,7 +25,7 @@ class TestTexts(unittest.TestCase):
 
     def test_book_path(self):
         with unittest.mock.patch.object(texts, 'pinned_path', side_effect=lambda pin, path: path):
-            self.assertEqual(book_path({'name': 'pg1'}, '/downloads'), '/downloads/books/pg1.txt')
+            self.assertEqual(book_path({'name': 'pg1'}, '/downloads'), os.path.join('/downloads', 'books', 'pg1.txt'))
 
     def test_book_paragraphs(self):
         text = (

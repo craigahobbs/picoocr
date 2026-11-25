@@ -63,4 +63,5 @@ make train-install     # into lib/models/
 ~~~
 
 The training renders text with Pillow's Raqm layout, which loads FriBiDi at runtime - on macOS, `brew install fribidi`
-first (Linux distributions and the Docker images have it).
+first (Linux distributions and the Docker images have it); on Windows, put a FriBiDi DLL (`fribidi.dll`, `fribidi-0.dll`,
+or `libfribidi-0.dll`) in a directory of the DLL search order.
